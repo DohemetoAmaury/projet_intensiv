@@ -1,0 +1,25 @@
+{
+  "name": "projet_intensiv",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "dev": "parcel src/index.html",
+    "build": "parcel build src/index.html --public-url ./",
+    "clean": "rmdir /s/q dist .cache"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/DohemetoAmaury/projet_intensiv.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/DohemetoAmaury/projet_intensiv/issues"
+  },
+  "homepage": "https://github.com/DohemetoAmaury/projet_intensiv#readme",
+  "devDependencies": {
+    "sass": "^1.34.0"
+  }
+}
