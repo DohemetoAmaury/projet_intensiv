@@ -1,0 +1,31 @@
+// colors
+
+$color-1: #18BFEF;
+$color-2: #F6F6F6;
+$color-3: #717981;
+$color-4: #4E403D;
+$color-5: #212931;
+
+$color-block-dim: 120px;
+// color blocks
+
+.color-block {
+  width: $color-block-dim;
+  height: $color-block-dim;
+  display: inline-block;
+  &.color-1{
+    background: $color-1;
+  }
+  &.color-2{
+    background: $color-2;
+  }
+  &.color-3{
+    background: $color-3;
+  }
+  &.color-4{
+    background: $color-4;
+  }
+  &.color-5{
+    background: $color-5;
+  }
+}

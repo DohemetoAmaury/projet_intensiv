@@ -1,1 +1,10 @@
 @import './amauryCSS/index.scss';
+
+body{
+  background: $color-5;
+}
+
+.main-content {
+  background: white;
+  padding: 4em;
+}
