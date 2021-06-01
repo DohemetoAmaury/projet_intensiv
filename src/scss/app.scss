@@ -1,10 +1,32 @@
 @import './amauryCSS/index.scss';
 
-body{
+body {
   background: $color-5;
 }
 
 .main-content {
   background: white;
   padding: 4em;
+}
+
+blockquote {
+  border-left: 4px solid $color-2;
+}
+
+table {
+  width: 100%;
+}
+
+.div-img {
+  width: 100%;
+}
+
+.padding-img-type1 {
+  padding-right: 2em;
+  padding-bottom: 1em;
+}
+
+.padding-img-type2 {
+  padding-left: 2em;
+  padding-bottom: 1em;
 }
