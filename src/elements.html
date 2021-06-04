@@ -8,8 +8,8 @@
   <link rel="stylesheet" href="./scss/app.scss">
 </head>
 <body class="container">
-  <header class="text-center">
-    <h1>INTENSIV'</h1>
+  <header class="text-center document-header">
+    <h1 id="title-intensiv">INTENSIV'</h1>
   </header>
 <main class="main-content">
   <header class="text-center">
@@ -138,7 +138,7 @@
     <div>
       <table>
         <thead class="text-left">
-          <tr>
+          <tr id="default-first-line">
             <th>NAME</th>
             <th scope="col">DESCRIPTION</th>
             <th scope="col">PRICE</th>
@@ -172,7 +172,7 @@
           </tr>
         </tbody>
         <tfoot class="text-left">
-          <tr>
+          <tr id="default-last-line">
             <th scope="row"></th>
             <td></td>
             <td>100.00</td>
@@ -183,7 +183,7 @@
     <h3>ALTERNATE</h3>
     <table>
       <thead class="text-left">
-        <tr>
+        <tr id="alternate-first-line">
           <th>NAME</th>
           <th scope="col">DESCRIPTION</th>
           <th scope="col">PRICE</th>
@@ -217,7 +217,7 @@
         </tr>
       </tbody>
       <tfoot class="text-left">
-        <tr>
+        <tr id="alternate-last-line">
           <th scope="row"></th>
           <td></td>
           <td>100.00</td>
@@ -228,28 +228,28 @@
   <hr>
   <section>
     <h2>FORM</h2>
-    <form>
-      <input type="text" name="name" placeholder="Name"/>
-      <input type="email" name="email" placeholder="Email"/>
-      <br>
-      <select name="category">
-        <option disabled="disabled" selected="selected">-Category-</option>
-      </select>
-      <br>
-      <input type="radio" name="size" value="low" checked="checked"/> Low
-      <input type="radio" name="size" value="normal"/> Normal
-      <input type="radio" name="size" value="high"/> High
-      <br>
-      <input type="checkbox" name="verification[]" id="emailcopy" value="1"/>
-        <label for="emailcopy">Email me a copy</label>
-      <input type="checkbox" name="verification[]" id="human" value="2" checked="checked"/>
-        <label for="human">I am an human</label>
-      <br>
-      <textarea name="message" placeholder="Enter your message"></textarea>
-      <br>
-      <button type="submit">SEND MESSAGE</button>
-      <button type="reset">RESET</button>
-    </form>
+      <form>
+          <input type="text" name="name" placeholder="Name"/>
+          <input type="email" name="email" placeholder="Email"/>
+        <br>
+        <select name="category">
+          <option disabled="disabled" selected="selected">-Category-</option>
+        </select>
+        <br>
+        <input type="radio" name="size" value="low" checked="checked"/> Low
+        <input type="radio" name="size" value="normal"/> Normal
+        <input type="radio" name="size" value="high"/> High
+        <br>
+        <input type="checkbox" name="verification[]" id="emailcopy" value="1"/>
+          <label for="emailcopy">Email me a copy</label>
+        <input type="checkbox" name="verification[]" id="human" value="2" checked="checked"/>
+          <label for="human">I am an human</label>
+        <br>
+        <textarea name="message" placeholder="Enter your message"></textarea>
+        <br>
+        <button type="submit">SEND MESSAGE</button>
+        <button type="reset">RESET</button>
+      </form>
   </section>
   <hr>
   <section>
@@ -278,11 +278,6 @@
     <p class="text-justify">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Aliquet bibendum enim facilisis gravida neque convallis a cras semper. Molestie nunc non blandit massa enim. Tincidunt praesent semper feugiat nibh sed pulvinar proin gravida. Vel pretium lectus quam id leo in vitae. Metus aliquam eleifend mi in. Tristique senectus et netus et. Ac auctor augue mauris augue neque gravida in. Pretium vulputate sapien nec sagittis aliquam malesuada bibendum. Curabitur gravida arcu ac tortor dignissim convallis aenean. Interdum velit euismod in pellentesque. Magna fermentum iaculis eu non diam. Magna sit amet purus gravida quis blandit turpis.
     Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Aliquet bibendum enim facilisis gravida neque convallis a cras semper. Molestie nunc non blandit massa enim. Tincidunt praesent semper feugiat nibh sed pulvinar proin gravida. Vel pretium lectus quam id leo in vitae. Metus aliquam eleifend mi in. Tristique senectus et netus et. Ac auctor augue. Magna fermentum iaculis eu non diam. Magna sit amet purus gravida quis blandit turpis.
     </p>
-    <img src="assets/petiteimage3.png" align=right class="padding-img-type2">
-    <p class="text-justify">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Aliquet bibendum enim facilisis gravida neque convallis a cras semper. Molestie nunc non blandit massa enim. Tincidunt praesent semper feugiat nibh sed pulvinar proin gravida. Vel pretium lectus quam id leo in vitae. Metus aliquam eleifend mi in. Tristique senectus et netus et. Ac auctor augue mauris augue neque gravida in. Pretium vulputate sapien nec sagittis aliquam malesuada bibendum. Curabitur gravida arcu ac tortor dignissim convallis aenean. Interdum velit euismod in pellentesque. Magna fermentum iaculis eu non diam. Magna sit amet purus gravida quis blandit turpis.
-    Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Aliquet bibendum enim facilisis gravida neque convallis a cras semper. Molestie nunc non blandit massa enim. Tincidunt praesent semper feugiat nibh sed pulvinar proin gravida. Vel pretium lectus quam id leo in vitae. Metus aliquam eleifend mi in. Tristique senectus et netus et. Ac auctor augue mauris augue neque gravida in. Pretium vulputate sapien nec sagittis aliquam malesuada bibendum. Curabitur gravida arcu ac tortor dignissim convallis aenean. Interdum velit euismod in pellentesque. Magna fermentum iaculis eu non diam. Magna sit amet purus gravida quis blandit turpis.
-    Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Aliquet bibendum enim facilisis gravida neque convallis a cras semper. Molestie nunc non blandit massa enim. Tincidunt praesent semper feugiat nibh sed pulvinar proin gravida. Vel pretium lectus quam id leo in vitae. Metus aliquam eleifend mi in. Tristique senectus et netus et. Ac auctor augue mauris augue neque gravida in. Pretium vulputate sapien nec sagittis aliquam malesuada bibendum. Curabitur gravida arcu ac tortor dignissim convallis aenean. Interdum velit euismod in pellentesque. Magna fermentum iaculis eu non diam. Magna sit amet purus gravida quis blandit turpis.
-    Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Aliquet bibendum enim facilisis gravida neque convallis a cras semper. Molestie nunc non blandit massa enim. Tincidunt praesent semper feugiat nibh sed pulvinar proin gravida. Vel pretium lectus quam id leo in vitae. Metus aliquam eleifend mi in. Tristique senectus et netus et. Ac auctor augue mauris augue neque gravida in. Pretium vulputate sapien nec sagittis aliquam malesuada bibendum. Curabitur gravida arcu ac tortor dignissim convallis aenean. Interdum velit euismod in pellentesque. Magna fermentum iaculis eu non diam. Magna sit amet purus gravida quis blandit turpis.</p>
   </section>
   <hr>
   <section>
@@ -306,7 +301,7 @@
       print ' It took ' + i + ' iteration to sort the deck.';
     </pre>
   </section>
-  <footer>
+  <footer class="main-footer">
     <form>
       <input type="text" name="name"> NAME
       <br>
@@ -328,10 +323,8 @@
     SOCIAL
   </footer>
 </main>
-<footer>
-  <div class="text-center">
-    &copy; UNTILTED | DESIGN: IEPS
-  </div>
+<footer class="text-center document-footer">
+  <p id="footer-info">&copy; UNTILTED | DESIGN: IEPS</p>
 </footer>
 </body>
 </html>

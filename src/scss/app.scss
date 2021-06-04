@@ -5,8 +5,20 @@ body {
 }
 
 .main-content {
-  background: white;
+  background: $color-white;
   padding: 4em;
+}
+
+.main-footer {
+  background: $color-2;
+}
+
+.document-header {
+  padding: 3em;
+}
+
+.document-footer {
+  padding: 3em;
 }
 
 blockquote {
@@ -15,9 +27,34 @@ blockquote {
 
 table {
   width: 100%;
+  margin-bottom: 3em;
+}
+
+tr:nth-child(odd) {
+  background: $color-2;
+}
+
+#default-first-line {
+  background: $color-white;
+}
+
+#default-last-line {
+  background: $color-white;
+}
+
+#alternate-first-line {
+  background: $color-white;
+}
+
+#alternate-last-line {
+  background: $color-white;
 }
 
 .div-img {
+  width: 100%;
+}
+
+.div-form {
   width: 100%;
 }
 
@@ -29,4 +66,17 @@ table {
 .padding-img-type2 {
   padding-left: 2em;
   padding-bottom: 1em;
+}
+
+#title-intensiv {
+  color: $color-white;
+}
+
+#footer-info {
+  color: $color-2;
+}
+
+#generic-page-img {
+  margin-top: 2.5em;
+  margin-bottom: 2.5em;
 }
