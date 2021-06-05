@@ -68,15 +68,15 @@ tr:nth-child(odd) {
   padding-bottom: 1em;
 }
 
-#title-intensiv {
-  color: $color-white;
-}
-
 #footer-info {
   color: $color-2;
 }
 
 #generic-page-img {
   margin-top: 2.5em;
-  margin-bottom: 2.5em;
+  margin-bottom: 2em;
+}
+
+.div-padding {
+  padding: 2em;
 }
