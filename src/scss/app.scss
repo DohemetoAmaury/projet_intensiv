@@ -6,7 +6,13 @@ body {
 
 .main-content {
   background: $color-white;
-  padding: 4em;
+}
+
+.general-content-padding {
+  padding-left: 4em;
+  padding-right: 4em;
+  padding-top: 0;
+  padding-bottom: 0;
 }
 
 .main-footer {
@@ -69,7 +75,7 @@ tr:nth-child(odd) {
 }
 
 #footer-info {
-  color: $color-2;
+  color: $color-3;
 }
 
 #generic-page-img {
@@ -79,4 +85,49 @@ tr:nth-child(odd) {
 
 .div-padding {
   padding: 2em;
+}
+
+nav {
+	padding: 0;
+  margin-bottom: 4em;
+  background: $color-3;
+}
+nav li {
+	display: inline;
+	list-style: none;
+}
+nav a {
+	display:inline-block;
+	margin: 0 30px;
+  text-align: left;
+  text-decoration: none;
+}
+nav i {
+  margin: 0 10px;
+}
+
+.li-icon-style {
+  display: inline;
+	list-style: none;
+  margin-left: 0;
+  margin-right: 10px;
+}
+
+
+
+.w-100 {
+  width: 100%;
+}
+
+a:hover {
+  color: $color-1;
+}
+
+i:hover {
+  color: $color-1;
+}
+
+button:hover {
+  background: $color-1;
+  border-color: $color-1;
 }

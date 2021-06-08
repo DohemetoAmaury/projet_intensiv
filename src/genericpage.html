@@ -6,6 +6,7 @@
   <meta http-equiv="X-UA-Compatible" content="ie=edge">
   <title>GENERIC PAGE</title>
   <link rel="stylesheet" href="./scss/app.scss">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css" integrity="sha512-iBBXm8fW90+nuLcSKlbmrPcLa0OT92xO1BIsZ+ywDWZCvqsWgccV3gFoRBv0z+8dLJgyAHIhR35VZc2oM/gI1w==" crossorigin="anonymous" referrerpolicy="no-referrer" />
 </head>
 <body class="container">
   <header class="text-center document-header">
@@ -18,7 +19,7 @@
     <h1>THIS IS A <br> GENERIC PAGE</h1>
     <p>Lorem ipsum dolor sit amet consectetur, <br> adipiscing elit sed do eiusmod tempor, <br> incididunt ut labore et dolore magna aliqua.</p>
   </header>
-  <section>
+  <section class="general-content-padding">
     <div class="grid col-12">
       <img src="https://i.picsum.photos/id/866/536/354.jpg?hmac=tGofDTV7tl2rprappPzKFiZ9vDh5MKj39oa2D--gqhA" class="div-img" id="generic-page-img">
     </div>
@@ -26,26 +27,48 @@
     <br>
     <p class="text-justify">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. In nisl nisi scelerisque eu ultrices vitae auctor eu. Eu turpis egestas pretium aenean pharetra magna ac placerat. Commodo ullamcorper a lacus vestibulum sed. Facilisi morbi tempus iaculis urna id volutpat lacus laoreet non. Rhoncus aenean vel elit scelerisque mauris pellentesque pulvinar pellentesque habitant. Diam donec adipiscing tristique risus nec. Quisque sagittis purus sit amet volutpat. Urna neque viverra justo nec ultrices dui. Porta lorem mollis aliquam ut porttitor leo a diam sollicitudin. Purus sit amet luctus venenatis lectus magna fringilla urna. Faucibus in ornare quam viverra. Aliquet eget sit amet tellus cras. Proin gravida hendrerit lectus a. Urna et pharetra pharetra massa massa. Libero justo laoreet sit amet cursus. Sem et tortor consequat id.</p>
   </section>
-  <footer class="main-footer">
+  <hr>
+  <footer class="main-footer general-content-padding">
     <form>
-      <input type="text" name="name"> NAME
-      <br>
-      <input type="email" name="email"> EMAIL
-      <br>
-      <textarea name="message"></textarea> MESSAGE
-      <br>
-      <button type="submit">SEND MESSAGE</button>
+    <div class="div-form grid">
+      <div class="col-6">
+       <input type="text" name="name" placeholder="Name" class="w-100 background-color-2"/>
+      </div>
+      <div class="col-6">
+        <input type="email" name="email" placeholder="Email" class="w-100 background-color-2"/>
+      </div>
+      <div class="col-12">
+        <textarea name="message" placeholder="Enter your message" class="w-100 background-color-2"></textarea>
+      </div>
+      <div class="col-12 text-center">
+        <button type="submit" class="medium-button-dark">SEND MESSAGE</button>
+      </div>
+    </div>
     </form>
-    <address>
-      ADRESS 9 Rue Charles Deliège 4247
-      <br>
-      Fléron, TN 0000-0000
-    </address>
-    PHONE <a href="tel:+32(000)000-0000">(000)000-0000</a>
-    <br>
-    EMAIL <a href="mailto:info@untilted.tld">mailto:info@untilted.tld</a>
-    <br>
-    SOCIAL
+    <div class="div-form grid text-center">
+      <div class="col-6">
+        <address>
+          <p>ADRESS</p> 9 Rue Charles Deliège 4247
+          <br>
+          Fléron, TN 0000-0000
+        </address>
+      </div>
+      <div class="col-6">
+          <p>PHONE</p> <a href="tel:+32(000)000-0000">(000)000-0000</a>
+      </div>
+      <div class="col-6">
+        <p>EMAIL</p> <a href="mailto:info@untilted.tld">mailto:info@untilted.tld</a>
+      </div>
+      <div class="col-6">
+        <p>SOCIAL</p>
+        <ul>
+          <li class="li-icon-style"><i class="fab fa-twitter"></i></li>
+          <li class="li-icon-style"><i class="fab fa-facebook-f"></i></li>
+          <li class="li-icon-style"><i class="fab fa-instagram"></i></li>
+          <li class="li-icon-style"><i class="fab fa-github"></i></li>
+        </ul>
+      </div>
+    </div>
   </footer>
   </main>
   <footer class="text-center document-footer">
