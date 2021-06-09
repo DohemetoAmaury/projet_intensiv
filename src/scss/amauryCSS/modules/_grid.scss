@@ -4,7 +4,7 @@ $gridValues: (
   ('-md', 768px, 720px),
   ('-lg', 992px, 960px),
   ('-xl', 1200px, 1140px),
-  ('-sm', 1400px, 1320px)
+  ('-xxl', 1400px, 1320px)
 );
 .grid {
   display: grid;
@@ -13,7 +13,6 @@ $gridValues: (
   > * {
     grid-column: span 12;
     grid-row: span 1;
-    border: 1px solid grey;
   }
 }
 @each $label, $breakpoint, $containerWidth in $gridValues {
