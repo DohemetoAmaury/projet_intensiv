@@ -79,10 +79,25 @@ $hr-margin: 3rem 0;
 $pre-color: $color-5;
 $pre-background: $color-2;
 $pre-padding: 1em;
+$pre-border: 1px solid $color-3;
 
 // list
 
 $li-padding-bottom: .5em;
+
+// pagination
+
+$pagination-container-margin: 4em auto;
+$pagination-button-background: $color-white;
+$pagination-button-font-color: $color-5;
+$pagination-button-font-size: 1.1rem;
+$pagination-button-border: 1px solid $color-3;
+$pagination-button-padding: 10px 16px;
+$pagination-button-active-font-color: $color-5;
+$pagination-button-active-background-color: $color-2;
+$pagination-button-hover-font-color: $color-1;
+$pagination-button-hover-border-color: $color-1;
+
 
 // default specification
 
@@ -120,6 +135,8 @@ pre {
   color: $pre-color;
   background: $pre-background;
   padding: $pre-padding;
+  overflow: hidden;
+  border: $pre-border;
 }
 
 li {
@@ -184,4 +201,49 @@ h6, .h6 {
   line-height: $line-height-h6;
   margin: $margin-h6;
   letter-spacing: $letter-spacing-h6;
+}
+
+.pagination-container {
+  margin: $pagination-container-margin;
+  width: 100%;
+}
+
+.pagination-liste {
+  display: block;
+  margin: 0 auto;
+  text-align: center;
+}
+
+.pagination-button {
+  display: inline-block;
+}
+
+.pagination-button > a {
+  background: $pagination-button-background;
+    font-weight: bold;
+    font-size: $pagination-button-font-size;
+    color: $pagination-button-font-color;
+    margin: -2.25px;
+    padding: $pagination-button-padding;
+    text-decoration: none;
+    border: $pagination-button-border;
+    &.active {
+      background: $pagination-button-active-background-color;
+      color: $pagination-button-active-font-color;
+    }
+}
+
+.pagination-button > a:hover {
+  border-color: $pagination-button-hover-border-color;
+  color: $pagination-button-hover-font-color;
+}
+
+// classes utilitaires
+
+.text-decoration-none {
+  text-decoration: none;
+}
+
+.margin-left-auto {
+  margin-left: auto;
 }

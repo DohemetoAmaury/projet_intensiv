@@ -13,6 +13,7 @@ $gridValues: (
   > * {
     grid-column: span 12;
     grid-row: span 1;
+   
   }
 }
 @each $label, $breakpoint, $containerWidth in $gridValues {

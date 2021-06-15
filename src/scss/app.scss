@@ -94,6 +94,7 @@ nav {
   margin-bottom: 4em;
   background: $color-3;
 }
+
 nav li {
 	display: inline;
 	list-style: none;
@@ -101,9 +102,9 @@ nav li {
 nav a {
 	display:inline-block;
 	margin: 0 30px;
-  text-align: left;
   text-decoration: none;
 }
+
 nav i {
   margin: 0 10px;
 }
@@ -111,12 +112,6 @@ nav i {
 .li-icon-style {
   display: inline;
 	list-style: none;
-  margin-left: 0;
-  margin-right: 10px;
-}
-
-.w-100 {
-  width: 100%;
 }
 
 a:hover {
@@ -144,14 +139,10 @@ li i:hover {
   color: $color-1;
 }
 
-.float-left {
-  float: left;
-}
-
-.float-right {
-  float: right;
-}
-
 .div-story {
   border: 1px solid $color-3;
+}
+
+.pagination-story {
+  list-style: none;
 }
